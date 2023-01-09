@@ -32,10 +32,10 @@ import matplotlib.pyplot as plt
 ## Step 2: Authentication for Twitter API
 Before the authentication, you need to have Twitter Developer Account. If you don’t have, you can apply by using this [https://developer.twitter.com/en](link). Getting Twitter developer account usually takes a day or two, or sometimes more, for your application to be reviewed by Twitter.
 
-Open the above mentoned link and click the button: 'Developer Portal'
-1.Fill the application details.
-2.Once the app is created, you will be redirected to the app page.
-3.Open the ‘Keys and Access Tokens’ tab.
+Open the above mentoned link and click the button: 'Developer Portal'<br>
+1.Fill the application details.<br>
+2.Once the app is created, you will be redirected to the app page.<br>
+3.Open the ‘Keys and Access Tokens’ tab.<br>
 4.Copy ‘Consumer Key’, ‘Consumer Secret’, ‘Access token’ and ‘Access Token Secret’.
 
 ### Authentication
