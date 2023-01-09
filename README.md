@@ -7,6 +7,7 @@ What is sentiment analysis? Sentiment Analysis is the process of ‘computationa
 
 **Here,I am going to use “Tweepy,” which is an easy-to-use Python library for accessing the Twitter API. You need to have a Twitter developer account and sample codes to do this analysis. You can find the Colab Notebook code in my Github Repository.**
 
+## What is Text Blob
 TextBlob is actually a high level library built over top of NLTK library. First we call clean_tweet method to remove links, special characters, etc. from the tweet using some simple regex. Then, as we pass tweet to create a TextBlob object, following processing is done over text by textblob library:
 * Tokenize the tweet ,i.e split words from body of text.
 * Remove stopwords from the tokens.(stopwords are the commonly used words which are irrelevant in text analysis like I, am, you, are, etc.)
@@ -68,3 +69,8 @@ To know more about tweepy visit [https://docs.tweepy.org/en/v3.5.0/api.html]
 
 ## Step 4: Cleaning Tweets to Analyse Sentiment
 Firstly, I create new data frame (tw_list) and a new feature(text), then clean text by using lambda function and clean RT, link, punctuation characters and finally convert to lowercase.
+Use regualr expression to clean RT, link, punctuation characters etc.. and finally convert to lowercase and then split the sentence into tokens.
+Now using for loop check whether those tokens are present in stopwords are not.If not then add those tokens to empty list.Then join all those tokens to get a sentence.
+
+## Step 5: Sentiment Analyse
+Now, I can use cleaned text to calculate polarity, subjectivity, sentiment, negative, positive, neutral and compound parameters again. For all calculated parameters, I create new features to my data frame.When you have a look tweet list you can see some duplicated tweets, so you need to drop duplicate tweets.
