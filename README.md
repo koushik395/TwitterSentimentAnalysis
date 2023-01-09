@@ -7,6 +7,16 @@ What is sentiment analysis? Sentiment Analysis is the process of ‘computationa
 
 **Here,I am going to use “Tweepy,” which is an easy-to-use Python library for accessing the Twitter API. You need to have a Twitter developer account and sample codes to do this analysis. You can find the Colab Notebook code in my Github Repository.**
 
+TextBlob is actually a high level library built over top of NLTK library. First we call clean_tweet method to remove links, special characters, etc. from the tweet using some simple regex. Then, as we pass tweet to create a TextBlob object, following processing is done over text by textblob library:
+* Tokenize the tweet ,i.e split words from body of text.
+* Remove stopwords from the tokens.(stopwords are the commonly used words which are irrelevant in text analysis like I, am, you, are, etc.)
+* Do POS( part of speech) tagging of the tokens and select only significant features/tokens like adjectives, adverbs, etc.
+* Pass the tokens to a sentiment classifier which classifies the tweet sentiment as positive, negative or neutral by assigning it a polarity between -1.0 to 1.0 .
+* TextBlob uses a Movies Reviews dataset in which reviews have already been labelled as positive or negative.
+* Positive and negative features are extracted from each positive and negative review respectively.
+* Training data now consists of labelled positive and negative features. This data is trained on a Naive Bayes Classifier.
+* Finally, parsed tweets are returned. Then, we can do various type of statistical analysis on the tweets. For example, in above program, we tried to find the percentage of positive, negative and neutral tweets about a query.
+
 
 ## Step 1: Install and Import Libraries
 Before analysis, you need to install textblob and tweepy libraries using !pip install command on your Colab Notebook.
