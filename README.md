@@ -12,7 +12,8 @@ What is sentiment analysis? Sentiment Analysis is the process of ‘computationa
 Before analysis, you need to install textblob and tweepy libraries using !pip install command on your Colab Notebook.
 
 ### Install Libraries
-!pip install textblob  !pip install tweepy
+!pip install textblob <br>
+!pip install tweepy
 
 
 You need to import libraries that you will use in this sentiment analysis project.
