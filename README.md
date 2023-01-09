@@ -39,13 +39,13 @@ Open the above mentoned link and click the button: 'Developer Portal'<br>
 4.Copy ‘Consumer Key’, ‘Consumer Secret’, ‘Access token’ and ‘Access Token Secret’.
 
 ### Authentication
-consumerKey = “Type your consumer key here”
-consumerSecret = “Type your consumer secret here”
-accessToken = “Type your accedd token here”
-accessTokenSecret = “Type your access token secret here”
-auth = tweepy.OAuthHandler(consumerKey, consumerSecret)
-auth.set_access_token(accessToken, accessTokenSecret)
-api = tweepy.API(auth)
+1. consumerKey = “Type your consumer key here”
+1. consumerSecret = “Type your consumer secret here”
+1. accessToken = “Type your accedd token here”
+1. accessTokenSecret = “Type your access token secret here”
+1. auth = tweepy.OAuthHandler(consumerKey, consumerSecret)
+1. auth.set_access_token(accessToken, accessTokenSecret)
+1. api = tweepy.API(auth)
 
 
 After your authentication, you need to use tweepy to get text and use Textblob to calculate positive, negative, neutral, polarity and compound parameters from the text.
