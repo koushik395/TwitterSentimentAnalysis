@@ -38,7 +38,7 @@ Open the above mentoned link and click the button: 'Developer Portal'
 3.Open the ‘Keys and Access Tokens’ tab.
 4.Copy ‘Consumer Key’, ‘Consumer Secret’, ‘Access token’ and ‘Access Token Secret’.
 
-# Authentication
+### Authentication
 consumerKey = “Type your consumer key here”
 consumerSecret = “Type your consumer secret here”
 accessToken = “Type your accedd token here”
@@ -51,7 +51,7 @@ api = tweepy.API(auth)
 After your authentication, you need to use tweepy to get text and use Textblob to calculate positive, negative, neutral, polarity and compound parameters from the text.
 
 ## Step 3: Fetching Tweets
-##### tw.cursor 
+#### tw.cursor 
 We use pagination a lot in Twitter API development. Iterating through timelines, user lists, direct messages, etc. In order to perform pagination we must supply a page/cursor parameter with each of our requests. The problem here is this requires a lot of boiler plate code just to manage the pagination loop. To help make pagination easier and require less code Tweepy has the Cursor object.
 
 To know more about tweepy visit [https://docs.tweepy.org/en/v3.5.0/api.html]
